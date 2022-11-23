@@ -7,9 +7,9 @@ import logo from '../../assets/logo.svg';
 const Menu = () => {
   return (
     <>
+      <p><a href="#home">Home</a></p>
       <p><a href="#features">Case Studies</a></p>
       <p><a href="#blog">Library</a></p>
-      <p><a href="#blog">About</a></p>
     </>
   );
 }
