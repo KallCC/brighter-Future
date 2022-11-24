@@ -1,0 +1,82 @@
+.gpt3__cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--gradient-bar);
+    padding: 2rem;
+    margin: 4rem;
+    border: 1px solid black;
+    color: black;
+
+    border-radius: 1rem;
+
+    font-family: var(--font-family);
+}
+
+.gpt3__cta-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.gpt3__cta-content h3{
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.gpt3__cta-content p{
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.gpt3__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 2rem;
+}
+
+.gpt3__cta-button button{
+    padding: 0.5rem 1.5rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    background: black;
+    border-radius: 2rem;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .gpt3__cta {
+        flex-direction: column;
+    }
+    
+    .gpt3__cta-button {
+        margin: 2rem 0 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__cta {
+        margin: 4rem 2rem;
+    }
+
+    .gpt3__cta-content h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .gpt3__cta-button button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
