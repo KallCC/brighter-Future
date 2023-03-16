@@ -1,7 +1,7 @@
 # brighterfuture
 
 This project is a simple web application developed using React and CSS. It serves as an introduction to the basics of React and CSS
-The website fetures a clean and modern design with easy navigation.
+The website features a clean, modern and responsive design with easy navigation.
 
 ## Available Scripts
 
