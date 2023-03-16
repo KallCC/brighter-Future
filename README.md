@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/24363931/225771503-64831261-3f0b-4873-bd07-c463b8371f9c.png)
+
+
 # brighterfuture
 
 This project is a simple web application developed using React and CSS. It serves as an introduction to the basics of React and CSS
