@@ -1,16 +1,16 @@
 import React from 'react'
 import './header.css'
 import people from '../../assets/people.png'
-import ai from '../../assets/ai2.png'
+import ai3 from '../../assets/ai3.png'
 
 
 const Header = () => {
   return (
-    <div className='gpt3__header section__padding' id='home'>
+    <section aria-label='Header' className='gpt3__header section__padding' id='home'>
       <div className='gpt3__header-content'>
         <h1 className='gradient__text'>Next-gen solutions
           with GPT-3 OpenAI</h1>
-        <p>GPT-3 is a deep learning-based autoregressive language model that generates human-like text.</p>
+        <p>GPT-3 is a large language model developed by OpenAI, designed to understand and generate human-like text based on its training data.</p>
 
         <div className='gpt3__header-content__input'>
           <input type="email" placeholder='Your Email Address' />
@@ -23,9 +23,9 @@ const Header = () => {
         </div>
       </div>
       <div className='gpt3__header-img'>
-        <img src={ai} alt='ai' />
+        <img src={ai3} alt='ai' />
       </div>
-    </div>
+    </section>
   )
 }
 

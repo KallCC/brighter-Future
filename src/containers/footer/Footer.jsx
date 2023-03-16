@@ -4,44 +4,44 @@ import gpt3Logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <div className="gpt3__footer section__padding">
+    <section aria-label='Footer' className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
+      <h2 className="gradient__text">Join the cutting-edge world of conversational AI and experience the power of ChatGPT before others</h2>
     </div>
 
     <div className="gpt3__footer-btn">
-      <p>Request Early Access</p>
+      <button>Request Early Access</button>
     </div>
 
     <div className="gpt3__footer-links">
-      <div className="gpt3__footer-links_logo">
+      <nav className="gpt3__footer-links_logo">
         <img src={gpt3Logo} alt="gpt3_logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Links</h4>
+        <p>BrighterFuture Inc, <br /> All Rights Reserved</p>
+      </nav>
+      <nav className="gpt3__footer-links_div" aria-label="Links">
+        <h3>Links</h3>
         <p>Social Media</p>
         <p>Counters</p>
         <p>Contact</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Company</h4>
+      </nav>
+      <nav className="gpt3__footer-links_div" aria-label="About">
+        <h3>Company</h3>
         <p>Terms & Conditions </p>
         <p>Privacy Policy</p>
         <p>Contact</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
-        <p>info@payme.net</p>
-      </div>
+      </nav>
+      <nav className="gpt3__footer-links_div" aria-label="Company details">
+        <h3>Get in touch</h3>
+        <p>1234 Elm Street Riverside, CA 92501</p>
+        <p>+1 (555) 123-4567</p>
+        <p>info@brighterfuture.com</p>
+      </nav>
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2022 GPT-3. All rights reserved.</p>
+      <p>@2023 brighterfuture. All rights reserved.</p>
     </div>
-  </div>
+  </section>
   )
 }
 

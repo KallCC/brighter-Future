@@ -13,9 +13,9 @@
     align-items: center;
 }
 
-.gpt3__navbar-links_container{
+.gpt3__navbar-menu_container-links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -25,17 +25,18 @@
     align-items: center;
 }
 
-.gpt3__navbar-links_container p,
-.gpt3__navbar-sign p,
-.gpt3__navbar-menu_container p {
+.gpt3__navbar-links_container a,
+.gpt3__navbar-sign a,
+.gpt3__navbar-menu_container a {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 25px;
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
+    margin-top: 5px
 }
 
 .gpt3__navbar-links_logo{
@@ -50,18 +51,24 @@
 .gpt3__navbar-sign button, 
 .gpt3__navbar-menu_container button{
     padding: 0.5rem 1rem;
+    margin-right: 5px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    color: #fff;
-    background: #FF4820;
+    color: #ffffff;
+    background: #750BE0;
     border-radius: 5px;
     border: 0;
-    outline: none;
     cursor: pointer;
 }
     
+.gpt3__navbar-menu button{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
 .gpt3__navbar-menu{
     display: none;
     position: relative;

@@ -3,7 +3,7 @@ import './article.css'
 
 const Article = ({ imgUrl, date, text }) => {
   return (
-    <div className="gpt3__blog-container_article">
+    <article className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">
         <img src={imgUrl} alt="blog_image" />
       </div>
@@ -12,9 +12,9 @@ const Article = ({ imgUrl, date, text }) => {
           <p>{date}</p>
           <h3>{text}</h3>
         </div>
-        <p>Read Full Article</p>
+        <button type='button'>Read Full Article</button>
       </div>
-    </div>
+    </article>
   )
 }
 

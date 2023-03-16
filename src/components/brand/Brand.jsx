@@ -6,21 +6,21 @@ import salesforce from '../../assets/salesforce.png';
 import intel from '../../assets/intel.png';
 
 const Brand = () => (
-  <div className="gpt3__brand section__padding">
+  <section aria-label="brand" className="gpt3__brand section__padding">
     <div>
-      <img src={cisco} alt='cisco'/>
+      <img width={150}height={100} src={cisco} alt='cisco'/>
     </div>
     <div>
-      <img src={ibm} alt='ibm'/>
+      <img width={150}height={100} src={ibm} alt='ibm'/>
     </div>
     <div>
-      <img src={salesforce} alt='salesforce'/>
+      <img width={150}height={100} src={salesforce} alt='salesforce'/>
     </div>
-    <div>
-      <img src={intel} alt='intel'/>
-    </div>
+    <picture>
+      <img width={150}height={100}src={intel} alt='intel'/>
+    </picture>
 
-  </div>
+  </section>
 );
 
 export default Brand;

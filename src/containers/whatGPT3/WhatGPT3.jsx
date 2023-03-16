@@ -19,22 +19,22 @@ const featuresData = [
 
 const WhatGPT3 = () => {
   return (
-    <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
+    <section aria-label='what is chatgpt' className="gpt3__whatgpt3 section__margin" id="wgpt3">
+      <div className="gpt3__whatgpt3-heading">
+        <h2 className="gradient__text">The possibilities are beyond your imagination</h2>
+        <button type='button'>Explore the Library</button >
+      </div>
       <div className="gpt3__whatgpt3-feature">
-        <Feature title="What is GPT-3" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+        <Feature title="What is GPT-3" text="GPT is trained on a massive dataset of internet text, ChatGPT has the ability to perform various natural language processing tasks, such as language translation, text summarization, and question-answering. ChatGPT has been widely used in various applications, including chatbots, virtual assistants, content generation, and more. Its impressive capabilities have led to significant advances in the field of artificial intelligence, making it an essential tool for anyone working with language processing." />
       </div>
 
-      <div className="gpt3__whatgpt3-heading">
-        <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-        <p>Explore the Library</p>
-      </div>
 
       <div className="gpt3__whatgpt3-container">
         {featuresData.map((item, index) => (
           <Feature title={item.title} text={item.text} key={index} />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

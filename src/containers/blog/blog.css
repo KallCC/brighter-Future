@@ -6,11 +6,10 @@
 .gpt3__blog-heading {
     width: 100%;
     text-align: left;
-
     margin-bottom: 5rem;
 }
 
-.gpt3__blog-heading h1 {
+.gpt3__blog-heading h2 {
     font-size: 62px;
     line-height: 75px;
     font-family: var(--font-family);
@@ -38,7 +37,6 @@
     .gpt3__blog-container {
         flex-direction: column-reverse;
     }
-
 
     .gpt3__blog-container_groupA {
         margin: 2rem 0;

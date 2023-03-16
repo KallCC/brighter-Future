@@ -7,9 +7,8 @@ import logo from '../../assets/logo.svg';
 const Menu = () => {
   return (
     <>
-      <p><a href="#wgpt3">What is GPT-3</a></p>
-      <p><a href="#features">Case Studies</a></p>
-      <p><a href="#blog">Blog</a></p>
+      <a href="#wgpt3">What is GPT-3</a>
+      <a href="#blog">Blog</a>
     </>
   );
 }
@@ -18,7 +17,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className='gpt3__navbar'>
+    <nav className='gpt3__navbar'>
       <div className='gpt3__navbar-links'>
         <div className='gpt3__navbar-links_logo'>
           <a href="#home"><img src={logo} alt='logo' /></a>
@@ -28,27 +27,32 @@ const Navbar = () => {
         </div>
       </div>
       <div className='gpt3__navbar-sign'>
-        <p>Sign in</p>
+        <button type='button'>Sign in</button>
         <button type='button'>Sign up</button>
       </div>
       <div className='gpt3__navbar-menu'>
         {toggleMenu
-          ? <RiCloseLine color='#fff' size={28} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color='#fff' size={28} onClick={() => setToggleMenu(true)} />
+          ? <button type='button' aria-label='Close menu'>
+            <RiCloseLine color='#fff' size={28} onClick={() => setToggleMenu(false)} />
+          </button>
+          :
+          <button type='button' aria-label='Open menu'>
+            <RiMenu3Line color='#fff' size={28} onClick={() => setToggleMenu(true)} />
+          </button>
         }
         {toggleMenu && (
           <div className='gpt3__navbar-menu_container scale-up-center'>
             <div className='gpt3__navbar-menu_container-links'>
               <Menu />
               <div className='gpt3__navbar-menu_container-links-sign'>
-                <p>Sign in</p>
+                <button>Sign in</button>
                 <button type='button'>Sign up</button>
               </div>
             </div>
           </div>
         )}
       </div>
-    </div>
+    </nav>
   )
 
 }
